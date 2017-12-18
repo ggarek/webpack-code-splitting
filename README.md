@@ -1,4 +1,8 @@
 
+# Webpack code spitting
+
+Compare code splitting using `dynamic import` and using `bundle loader`.
+
 # Code spitting strategy
 
 - [x] Split by using dynamic import
