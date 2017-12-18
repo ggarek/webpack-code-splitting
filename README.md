@@ -9,7 +9,7 @@
 # TODOs
 
 - [ ] Add build output results
-- [ ] Compare bundles between builds
+- [ ] Compare bundles between builds (% of similar code between all js artifacts)
 - [ ] Provide package analyzer results
 
 # Notes 
