@@ -12,7 +12,7 @@ module.exports = {
         loader: 'bundle-loader',
         options: {
           lazy: true,
-          name: '[name].screen',
+          name: '[name]',
         },
       },
     ],
@@ -21,10 +21,13 @@ module.exports = {
     new HTMLWebpackPlugin({
       title: 'Code Splitting | Bundle loader'
     }),
+    new (require('webpack')).optimize.CommonsChunkPlugin({
+      name: 'common',
+    }),
   ],
   output: {
     filename: '[name].bundle.js',
-    chunkFilename: '[name].js',
+    chunkFilename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist/use-bundle-loader')
   }
 };

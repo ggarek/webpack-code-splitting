@@ -9,9 +9,9 @@ module.exports = {
     new HTMLWebpackPlugin({
       title: 'Code Splitting | Dynamic import'
     }),
-      // new (require('webpack')).optimize.CommonsChunkPlugin({
-      //   name: 'common' // Specify the common bundle's name.
-      // })
+    new (require('webpack')).optimize.CommonsChunkPlugin({
+      name: 'common'
+    }),
   ],
   output: {
     filename: '[name].bundle.js',
