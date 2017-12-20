@@ -4,8 +4,8 @@
   "description": "Examples of webpack code spitting",
   "main": "index.js",
   "scripts": {
-    "use-bundle-loader:build": "rm -rf dist/use-bundle-loader && webpack --config webpack.config.bundle-loader.js",
-    "use-dynamic-import:build": "rm -rf dist/use-dynamic-import && webpack --config webpack.config.dynamic-import.js",
+    "use-bundle-loader:build": "rm -rf dist/use-bundle-loader && webpack --verbose --config webpack.config.bundle-loader.js",
+    "use-dynamic-import:build": "rm -rf dist/use-dynamic-import && webpack --verbose --config webpack.config.dynamic-import.js",
     "build": "npm run use-bundle-loader:build && npm run use-dynamic-import:build"
   },
   "keywords": [
