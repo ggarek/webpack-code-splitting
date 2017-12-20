@@ -14,7 +14,7 @@ CommonChunksPlugin is an optimization and can be used with any mentioned code sp
 
 # If "code spitting does not work"
 
-- if you are using typescript, you may want to set ```{ "module": "esnext", "moduleResolution": "commonjs"``` (see this [issue](https://github.com/Microsoft/TypeScript/issues/16820))
+- if you are using typescript, you may want to set ```{ "module": "esnext", "moduleResolution": "commonjs" }``` in your ts config (see this [issue](https://github.com/Microsoft/TypeScript/issues/16820))
 - if you are using `AggressiveMergingPlugin`, you want to check the build without it. It may merge otherwise splitted bundles (e.g. merge several dynamic imports in one chunk)
 - if a `chunkFilename`/`webpackChunkName` is same for different chunks, they will be merged together
 
